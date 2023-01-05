@@ -18,7 +18,9 @@
           "height": 1
         }
       ],
-      "structure_overrides": []
+      "structure_overrides": [
+        "minecraft:nether_complexes"
+      ]
     }
   }
 }
