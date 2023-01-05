@@ -1,0 +1,16 @@
+downloads/
+logs/
+resourcepacks/
+saves/
+world/
+screenshots/
+options.txt
+realms_persistence.json
+servers.dat
+servers.dat_old
+supportercache.json
+usercache.json
+usernamecache.json
+.curseclient
+schematics/
+shaderpacks/

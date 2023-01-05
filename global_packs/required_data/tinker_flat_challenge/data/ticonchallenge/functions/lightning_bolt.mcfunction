@@ -1,0 +1,1 @@
+summon lightning_bolt 0 1 0

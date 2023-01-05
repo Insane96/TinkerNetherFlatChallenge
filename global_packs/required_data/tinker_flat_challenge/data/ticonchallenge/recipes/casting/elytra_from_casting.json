@@ -1,0 +1,13 @@
+{
+    "type": "tconstruct:casting_table",
+    "cast": {
+        "item": "tconstruct:dragon_scale"
+    },
+    "cast_consumed": true,
+    "fluid": {
+        "tag": "tconstruct:molten_debris",
+        "amount": 450
+    },
+    "result": "minecraft:elytra",
+    "cooling_time": 300
+}

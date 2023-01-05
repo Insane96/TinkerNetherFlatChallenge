@@ -1,0 +1,33 @@
+{
+  "parent": "ticonchallenge:tinker_challenge/slimeballs",
+  "display": {
+    "icon": {
+      "item": "tconstruct:sky_slime_grass_seeds"
+    },
+    "title": "Up high",
+    "description": "Obtain Sky Slime Grass Seeds by killing a slime up in the sky.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sky_slime_grass_seeds": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tconstruct:sky_slime_grass_seeds"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sky_slime_grass_seeds"
+    ]
+  ]
+}

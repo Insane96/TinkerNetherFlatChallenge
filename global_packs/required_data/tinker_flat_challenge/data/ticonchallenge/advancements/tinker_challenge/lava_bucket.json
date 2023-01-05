@@ -1,0 +1,33 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:lava_bucket"
+        },
+        "title": "A ruined portal will do it",
+        "description": "You may find a ruined portal nearby that can help you get this advancement. (Increasing render distance is not cheating, it's just pro gamer move)",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "ticonchallenge:tinker_challenge/water_bucket",
+    "criteria": {
+        "lava_bucket": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "minecraft:lava_bucket"
+                  ]
+                }
+              ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "lava_bucket"
+        ]
+    ]
+}

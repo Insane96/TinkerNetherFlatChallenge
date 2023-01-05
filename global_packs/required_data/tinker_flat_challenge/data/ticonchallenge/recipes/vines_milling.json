@@ -1,0 +1,16 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "minecraft:weeping_vines"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:redstone",
+      "count": 1,
+      "chance": 0.2
+    }
+  ],
+  "processingTime": 70
+}

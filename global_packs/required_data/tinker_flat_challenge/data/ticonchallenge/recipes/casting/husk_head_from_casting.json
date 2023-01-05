@@ -1,0 +1,13 @@
+{
+    "type": "tconstruct:casting_basin",
+    "cast": {
+        "item": "minecraft:zombie_head"
+    },
+    "cast_consumed": true,
+    "fluid": {
+        "tag": "tconstruct:molten_glass",
+        "amount": 9000
+    },
+    "result": "tconstruct:husk_head",
+    "cooling_time": 300
+}

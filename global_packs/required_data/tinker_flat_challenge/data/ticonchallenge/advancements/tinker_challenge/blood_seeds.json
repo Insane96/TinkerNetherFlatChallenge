@@ -1,0 +1,33 @@
+{
+  "parent": "ticonchallenge:tinker_challenge/sky_seeds",
+  "display": {
+    "icon": {
+      "item": "tconstruct:blood_slime_grass_seeds"
+    },
+    "title": "Hot Floor",
+    "description": "Obtain Blood Slime Grass Seeds by killing a Sky Slime on a hot block.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "blood_slime_grass_seeds": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tconstruct:blood_slime_grass_seeds"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "blood_slime_grass_seeds"
+    ]
+  ]
+}
