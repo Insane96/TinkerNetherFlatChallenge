@@ -1467,7 +1467,7 @@
 		"Enable Armor" = true
 
 	[client.improved_tooltips]
-		"Attribute Tooltips" = true
+		"Attribute Tooltips" = false
 		"Food Tooltips" = true
 		"Shulker Tooltips" = true
 		"Map Tooltips" = true

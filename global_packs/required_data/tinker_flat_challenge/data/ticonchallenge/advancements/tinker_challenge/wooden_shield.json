@@ -1,0 +1,33 @@
+{
+    "display": {
+        "icon": {
+            "item": "shieldsplus:wooden_shield"
+        },
+        "title": "Shielding without Iron",
+        "description": "Obtain a Wooden shield. Even tho it blocks only 1 damage, it's still better than nothing.",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "ticonchallenge:tinker_challenge/wood",
+    "criteria": {
+        "wooden_shield": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "shieldsplus:wooden_shield"
+                  ]
+                }
+              ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "wooden_shield"
+        ]
+    ]
+}
