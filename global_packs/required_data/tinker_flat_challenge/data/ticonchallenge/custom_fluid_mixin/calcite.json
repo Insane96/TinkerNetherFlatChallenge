@@ -1,0 +1,11 @@
+{
+    "type": "flowing_block",
+    "flowing": "#tconstruct:molten_quartz",
+    "blocks_nearby": [
+        "#tconstruct:seared_stone"
+    ],
+    "result": {
+        "type": "block",
+        "block": "minecraft:calcite"
+    }
+}
