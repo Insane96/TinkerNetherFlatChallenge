@@ -4,7 +4,7 @@
             "item": "minecraft:tuff"
         },
         "title": "Flowing Fluids",
-        "description": "Mixin different fluids result in different outcomes. Lava flowing near seared stone produces Tuff, Lava flowing near Scorched Stone produces Blackstone, Lava flowing near Slime produces Calcite, Slime flowing near Seared Stone produces Granite, Slime flowing near Scorched Stone produces Diorite, Ender Slime flowing near Molten Iron produces Crimsite, Ender Slime flowing near Molten Zinc produces Asurine, Ender Slime flowing near Molten Gold produces Ochrum, Ender Slime flowing near Molten Copper produces Veridium, Water flowing near Seared or Scorched Stone produces Cobbled Deepslate.",
+        "description": "Mixin different fluids result in different outcomes. Use JEI to check all the possible combos.",
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
@@ -24,18 +24,6 @@
                 ]
             }
         },
-        "blackstone": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [
-                    {
-                        "items": [
-                            "minecraft:blackstone"
-                        ]
-                    }
-                ]
-            }
-        },
         "calcite": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
@@ -43,30 +31,6 @@
                     {
                         "items": [
                             "minecraft:calcite"
-                        ]
-                    }
-                ]
-            }
-        },
-        "diorite": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [
-                    {
-                        "items": [
-                            "minecraft:diorite"
-                        ]
-                    }
-                ]
-            }
-        },
-        "granite": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [
-                    {
-                        "items": [
-                            "minecraft:granite"
                         ]
                     }
                 ]
@@ -138,16 +102,7 @@
             "tuff"
         ],
         [
-            "blackstone"
-        ],
-        [
             "calcite"
-        ],
-        [
-            "diorite"
-        ],
-        [
-            "granite"
         ],
         [
             "cobbled_deepslate"
