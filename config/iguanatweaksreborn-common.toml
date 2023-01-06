@@ -4,39 +4,39 @@
 "Enable Hunger" = true
 "Enable Mining" = true
 "Enable Miscellaneous" = true
-"Enable Movement" = true
-"Enable Sleep & Respawn" = true
-"Enable Stack Size" = true
+"Enable Movement" = false
+"Enable Sleep & Respawn" = false
+"Enable Stack Size" = false
 
 [Combat]
 	#Various changes from weapons damage to armor reduction
 	"Enable Stats" = true
 	#Player will deal no knockback if attacking with a non-weapon or spamming
-	"Enable No Knockback" = true
+	"Enable No Knockback" = false
 	#Various changes to Shields. Disabled if Shields+ is installed.
 	"Enable Shields" = true
 
 	#Various changes from weapons damage to armor reduction
 	[Combat.Stats]
 		#If true, Swords and Tridents get -1 damage and Axes get -1.5 damage.
-		"Reduce Weapon Damage" = true
+		"Reduce Weapon Damage" = false
 		#Set the power of the Power enchantment (vanilla is 0.5).
 		#Range: 0.0 ~ 10.0
 		"Power Power" = 0.35
 		#If true, Arrows from Bows will no longer randomly crit (basically disables the random bonus damage given when firing a fully charged arrow).
 		"Disable Arrow Crits" = true
 		#If true, Arrows from Crossbows will no longer deal random damage, but a set amount of damage (about 9 at a medium distance).
-		"Adjust Crossbow Damage" = true
+		"Adjust Crossbow Damage" = false
 		#DISABLE: Disables protection enchantment.
 		#NERF: Sets max protection level to 3 instead of 4
 		#NONE: no changes to protection are done
 		#Allowed Values: NONE, NERF, DISABLE
-		"Nerf Protection Enchantment" = "DISABLE"
+		"Nerf Protection Enchantment" = "NONE"
 		#Define Attribute Modifiers to apply to single items, one string = one item/tag.
 		#The format is modid:itemid,slot,attribute,amount,operation (or tag instead of itemid #modid:tagid,...)
 		#- slot can be: MAIN_HAND,OFF_HAND,HEAD,CHEST,LEGS,FEET
 		#- operation can be: ADDITION, MULTIPLY_BASE, MULTIPLY_TOTAL
-		"Item Modifiers" = ["minecraft:iron_helmet,HEAD,minecraft:generic.armor_toughness,1.0,ADDITION", "minecraft:iron_chestplate,CHEST,minecraft:generic.armor_toughness,1.0,ADDITION", "minecraft:iron_leggings,LEGS,minecraft:generic.armor_toughness,1.0,ADDITION", "minecraft:iron_boots,FEET,minecraft:generic.armor_toughness,1.0,ADDITION", "minecraft:netherite_helmet,HEAD,minecraft:generic.armor,1,ADDITION", "minecraft:netherite_boots,FEET,minecraft:generic.armor,1,ADDITION"]
+		"Item Modifiers" = []
 
 	#Player will deal no knockback if attacking with a non-weapon or spamming
 	[Combat."No Knockback"]
@@ -97,7 +97,7 @@
 		#The experience required to level up will be linear instead of exponential like vanilla.
 		#The formula used to calculate the xp required for next level is (3 * (current_level + 1))
 		#Obviously incompatible with Allurement's 'Remove level Scaling'
-		"Better Scaling XP to next level" = true
+		"Better Scaling XP to next level" = false
 		#On death, players will drop this percentage of experience instead of max 7 levels. Setting to -1 will disable this.
 		#Due to Minecraft limitations this is incompatible with other mods that change the level scaling (e.g. Allurement's 'Remove level Scaling').
 		#Range: -1.0 ~ 1.0
@@ -117,7 +117,7 @@
 		#Removes cost of renaming items in Anvil
 		"Remove rename cost" = true
 		#Replaces the default Mending enchantment. Mending sets the repair cost of an item to 'Unmending Cap' and will stop it from increasing. No longer repairs items with xp.
-		Unmending = true
+		Unmending = false
 		#Set the cap repair cost set by Unmending
 		#Range: > 1
 		"Unmending Cap" = 20
@@ -132,11 +132,11 @@
 	#Slower Plants (non-crops) growing
 	"Enable Plants Growth" = true
 	#Slower Hoes and more fragile
-	"Enable Hoes Nerfs" = true
+	"Enable Hoes Nerfs" = false
 	#Crops are no longer insta-minable. This applies only to blocks that are instances of net.minecraft.world.level.block.CropBlock.
 	#Crops hardness is still affected by the Hardness module.
 	#Changing anything requires a minecraft restart.
-	"Enable Harder Crops" = true
+	"Enable Harder Crops" = false
 
 	#Slower breeding, Growing, Egging and Milking
 	[Farming."Livestock Slowdown"]
@@ -246,7 +246,7 @@
 	#Makes Health regen work differently, like in Combat Test snapshots. Can be customized. Also adds Well Fed and Injured effects.
 	"Enable Health Regen" = true
 	#Change food's hunger and saturation given, also makes food heal you by a bit. Changing anything requires a Minecraft restart.
-	"Enable Food Hunger" = true
+	"Enable Food Hunger" = false
 	#Make the player consume more hunger with different actions
 	"Enable Exhaustion Increase" = true
 
@@ -255,7 +255,7 @@
 		#Makes potions, milk and honey faster to drink, 1 second instead of 1.6.
 		"Faster Drink Consuming" = true
 		#Makes the speed for eating food based off the hunger and saturation they provide. At 2 (hunger + saturation) the speed is vanilla, higher / lower (hunger + saturation) will lower / raise the speed. Minimum 16 ticks.
-		"Eating Speed Based Off Food Restored" = true
+		"Eating Speed Based Off Food Restored" = false
 		#Multiplier for the time taken to eat. Only applied if 'Eating Speed Based Off Food Config' is active.
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Eating Time Multiplier" = 0.115
@@ -343,16 +343,16 @@
 		"Block Break Exhaustion Multiplier" = 0.0
 		#When breaking block you'll get exhaustion every tick during the breaking.
 		#Range: 0.0 ~ 1024.0
-		"Exhaustion per tick when breaking a block" = 0.005
+		"Exhaustion per tick when breaking a block" = 0.0
 		#Every second the player will get this exhaustion.
 		#Range: 0.0 ~ 1024.0
-		"Passive Exhaustion" = 0.005
+		"Passive Exhaustion" = 0.0
 		#When affected by the hunger effect ANY action will give you 100% more exhaustion per level.
 		"Effective Hunger" = true
 
 [Mining]
 	#Change all the blocks hardness
-	"Enable Global Hardness" = true
+	"Enable Global Hardness" = false
 	#Change specific blocks hardness as well as black and whitelist. Requires a Minecraft restart if you remove a block from the list.
 	"Enable Custom Hardness" = true
 	#Various mining changes
@@ -388,12 +388,12 @@
 		#The format is modid:blockid,hardness,dimensionid or #modid:tagid,hardness,dimensionid
 		#E.g. 'minecraft:stone,5.0' will make stone have 5 hardness in every dimension (multiplied by Global Hardness).
 		#E.g. '#forge:stone,5.0,minecraft:overworld' will make all the stone types have 5 hardness but only in the overworld.
-		"Custom Hardness" = ["minecraft:coal_ore,2.5", "minecraft:iron_ore,3", "minecraft:gold_ore,3.5", "minecraft:diamond_ore,4", "minecraft:redstone_ore,3", "minecraft:lapis_ore,3", "minecraft:emerald_ore,4", "minecraft:deepslate_coal_ore,4.5", "minecraft:deepslate_iron_ore,5", "minecraft:deepslate_gold_ore,5.5", "minecraft:deepslate_diamond_ore,6", "minecraft:deepslate_redstone_ore,5", "minecraft:deepslate_lapis_ore,5", "minecraft:deepslate_emerald_ore,6", "minecraft:ancient_debris,10", "#iguanatweaksreborn:obsidians,33"]
+		"Custom Hardness" = ["#iguanatweaksreborn:obsidians,33", "minecraft:nether_wart_block,0.4", "minecraft:warped_wart_block,0.4"]
 
 	#Various mining changes
 	[Mining.Misc]
 		#Silverfish blocks will insta-mine like pre-1.17
-		"Insta-Mine Silverfish" = true
+		"Insta-Mine Silverfish" = false
 		#Heads will insta-break
 		"Insta-Mine Heads" = true
 
@@ -401,11 +401,11 @@
 	#Various changes to explosions from knockback to shielding.
 	"Enable Explosion Overhaul" = true
 	#Less durable and efficient tools
-	"Enable Tool Stats" = true
+	"Enable Tool Stats" = false
 	#Apply potion effects on certain hunger / health / experience level
-	"Enable DeBuffs" = true
+	"Enable DeBuffs" = false
 	#Spawners will no longer spawn mobs infinitely
-	"Enable Temporary Spawners" = true
+	"Enable Temporary Spawners" = false
 	#Small changes to villagers to make them less OP
 	"Enable Villager Nerfs" = true
 	#Various Nerfs
@@ -450,10 +450,10 @@
 	[Miscellaneous."Tool Stats"]
 		#A list of items which should have their durability changed.
 		#Format is 'modid:itemid,durability'
-		"Tools Durability" = ["minecraft:wooden_sword,1", "minecraft:wooden_pickaxe,1", "minecraft:wooden_shovel,1", "minecraft:wooden_hoe,1", "minecraft:wooden_axe,8", "minecraft:stone_sword,1", "minecraft:stone_pickaxe,8", "minecraft:stone_shovel,48", "minecraft:stone_hoe,8", "minecraft:stone_axe,48", "minecraft:iron_sword,375", "minecraft:iron_pickaxe,375", "minecraft:iron_shovel,375", "minecraft:iron_hoe,375", "minecraft:iron_axe,375", "minecraft:elytra,144"]
+		"Tools Durability" = ["minecraft:wooden_sword,33", "minecraft:wooden_pickaxe,33", "minecraft:wooden_shovel,33", "minecraft:wooden_hoe,33", "minecraft:wooden_axe,33", "minecraft:stone_sword,33", "minecraft:stone_pickaxe,33", "minecraft:stone_shovel,10", "minecraft:stone_hoe,33", "minecraft:stone_axe,33", "minecraft:iron_sword,33", "minecraft:iron_pickaxe,33", "minecraft:iron_shovel,33", "minecraft:iron_hoe,33", "minecraft:iron_axe,33", "minecraft:golden_sword,33", "minecraft:golden_pickaxe,33", "minecraft:golden_shovel,33", "minecraft:golden_hoe,33", "minecraft:golden_axe,33", "minecraft:elytra,104", "minecraft:diamond_sword,33", "minecraft:diamond_pickaxe,33", "minecraft:diamond_axe,33", "minecraft:diamond_shovel,33", "minecraft:diamond_hoe,33", "minecraft:netherite_sword,33", "minecraft:shears,33", "minecraft:netherite_pickaxe,33", "minecraft:netherite_axe,33", "minecraft:netherite_shovel,33", "minecraft:netherite_hoe,33", "minecraft:flint_and_steel,10", "minecraft:leather_helmet,33", "minecraft:leather_chestplate,33", "minecraft:leather_leggings,33", "minecraft:leather_boots,33", "minecraft:chainmail_helmet,33", "minecraft:chainmail_chestplate,33", "minecraft:chainmail_leggings,33", "minecraft:chainmail_boots,33", "minecraft:golden_helmet,33", "minecraft:golden_chestplate,33", "minecraft:golden_leggings,33", "minecraft:golden_boots,33", "minecraft:iron_helmet,33", "minecraft:iron_chestplate,33", "minecraft:iron_leggings,33", "minecraft:iron_boots,33", "minecraft:diamond_helmet,33", "minecraft:diamond_chestplate,33", "minecraft:diamond_leggings,33", "minecraft:diamond_boots,33", "minecraft:netherite_helmet,33", "minecraft:netherite_chestplate,33", "minecraft:netherite_leggings,33", "minecraft:netherite_boots,33", "minecraft:bow,33", "minecraft:crossbow,33"]
 		#A list of items and multipliers that will apply to mining speed when breaking blocks with that item.
 		#Format is 'modid:itemid,efficiency_multiplier'
-		"Tools Efficiency" = ["minecraft:wooden_pickaxe,0.8", "minecraft:wooden_shovel,0.8", "minecraft:wooden_hoe,0.8", "minecraft:wooden_axe,0.8", "minecraft:stone_pickaxe,0.85", "minecraft:stone_shovel,0.85", "minecraft:stone_hoe,0.85", "minecraft:stone_axe,0.85", "minecraft:iron_pickaxe,0.9", "minecraft:iron_shovel,0.9", "minecraft:iron_hoe,0.9", "minecraft:iron_axe,0.9", "minecraft:diamond_pickaxe,0.9", "minecraft:diamond_shovel,0.9", "minecraft:diamond_hoe,0.9", "minecraft:diamond_axe,0.9"]
+		"Tools Efficiency" = ["minecraft:wooden_pickaxe,0", "minecraft:wooden_shovel,0", "minecraft:wooden_hoe,0", "minecraft:wooden_axe,0", "minecraft:stone_pickaxe,0", "minecraft:stone_shovel,0", "minecraft:stone_hoe,0", "minecraft:stone_axe,0", "minecraft:iron_pickaxe,0", "minecraft:iron_shovel,0", "minecraft:iron_hoe,0", "minecraft:iron_axe,0", "minecraft:diamond_pickaxe,0", "minecraft:diamond_shovel,0", "minecraft:diamond_hoe,0", "minecraft:diamond_axe,0", "minecraft:netherite_pickaxe,0", "minecraft:netherite_shovel,0", "minecraft:netherite_hoe,0", "minecraft:netherite_axe,0"]
 
 	#Apply potion effects on certain hunger / health / experience level
 	[Miscellaneous.DeBuffs]
