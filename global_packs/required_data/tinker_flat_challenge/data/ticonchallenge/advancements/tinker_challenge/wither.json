@@ -10,7 +10,7 @@
       "announce_to_chat": true,
       "hidden": false
   },
-  "parent": "ticonchallenge:tinker_challenge/wood",
+  "parent": "ticonchallenge:tinker_challenge/fortress",
   "criteria": {
     "ancient_debris": {
       "trigger": "minecraft:inventory_changed",

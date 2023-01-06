@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "quark:soul_bead"
+        },
+        "title": "One structure per dimension",
+        "description": "Get to the Nether, you might need to loot a few ruined portals to get flint, or use composters the old ways",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "minecraft:nether/root",
+    "criteria": {
+        "fortress": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "location": {
+                    "feature": "minecraft:fortress"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "fortress"
+        ]
+    ]
+}

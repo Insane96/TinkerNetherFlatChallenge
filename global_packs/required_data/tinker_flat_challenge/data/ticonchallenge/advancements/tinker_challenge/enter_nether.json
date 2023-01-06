@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:obsidian"
+        },
+        "title": "You need to go deeper",
+        "description": "Get to the Nether, you might need to loot a few ruined portals to get flint, or use composters",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "ticonchallenge:tinker_challenge/wood",
+    "criteria": {
+        "entered_nether": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "minecraft:the_nether"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "entered_nether"
+        ]
+    ]
+}
