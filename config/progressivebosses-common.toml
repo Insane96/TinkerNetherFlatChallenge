@@ -44,7 +44,7 @@
 		"Explosion Power Bonus" = 8.0
 		#At this difficulty the Wither Explosion will cause fire. Set to -1 to disable.
 		#Range: > -1
-		"Explosion Causes Fire at Difficulty" = -1
+		"Explosion Causes Fire at Difficulty" = 9
 		#The Wither will no longer wait 1.0 seconds before breaking blocks when he's hit, instead just 0.5s
 		"Faster Breaking Blocks" = true
 		#The Wither will break even blocks below him when hit.

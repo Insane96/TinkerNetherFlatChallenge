@@ -1,0 +1,33 @@
+{
+  "display": {
+      "icon": {
+          "item": "minecraft:ancient_debris"
+      },
+      "title": "Ancient, like the Wither?",
+      "description": "Summon and kill the Wither. Please note that the Wither has been buffed and trapping him no longer works, so gear up. Also the Wither drops Ancient Debris. Also also more Wither spawned = higher difficulty but more rewards",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "parent": "ticonchallenge:tinker_challenge/wood",
+  "criteria": {
+    "ancient_debris": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:ancient_debris"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ancient_debris"
+    ]
+  ]
+}
