@@ -70,11 +70,6 @@
                 "add": false
               }
             ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 5,
-            "name": "minecraft:golden_horse_armor"
           }
         ]
       }
