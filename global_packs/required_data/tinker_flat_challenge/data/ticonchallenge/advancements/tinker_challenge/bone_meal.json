@@ -1,24 +1,24 @@
 {
-  "parent": "ticonchallenge:tinker_challenge/bone_meal",
+  "parent": "ticonchallenge:tinker_challenge/slimeballs",
   "display": {
     "icon": {
-      "item": "minecraft:crimson_stem"
+      "item": "minecraft:bone_meal"
     },
-    "title": "Red wood but still wood",
-    "description": "Obtain wood.",
+    "title": "Maybe a lava bucket will help",
+    "description": "Obtain bone meal and use it on the ground.",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
-    "crimson_log": {
+    "bone_meal": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:crimson_stem"
+              "minecraft:bone_meal"
             ]
           }
         ]
@@ -27,7 +27,7 @@
   },
   "requirements": [
     [
-      "crimson_log"
+      "bone_meal"
     ]
   ]
 }

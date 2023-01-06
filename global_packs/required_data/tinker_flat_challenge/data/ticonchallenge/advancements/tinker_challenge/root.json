@@ -4,7 +4,7 @@
       "item": "minecraft:crimson_nylium"
     },
     "title": "Tinkers' NetherFlat Challenge",
-    "description": "Advancements help you with things not visible in JEI",
+    "description": "Advancements help you with things not visible in JEI. Also check Tinkers' and Create advancements.",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,
