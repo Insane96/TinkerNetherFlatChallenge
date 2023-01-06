@@ -27,6 +27,15 @@
           "name": "minecraft:dripstone_block"
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dripstone_block"
+        }
+      ]
     }
   ]
 }

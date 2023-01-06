@@ -5,7 +5,7 @@
       "item": "minecraft:crimson_stem"
     },
     "title": "Red wood but still wood",
-    "description": "Obtain wood. Go follow Tinkers' advancements to get your first tool.",
+    "description": "Obtain wood. Read 'Materials and you' to get your first tool.",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
