@@ -1,11 +1,11 @@
 {
-  "parent": "ticonchallenge:tinker_challenge/slimeballs",
+  "parent": "ticonchallenge:tinker_challenge/wood",
   "display": {
     "icon": {
       "item": "minecraft:wandering_trader_spawn_egg"
     },
     "title": "\"Loot Bag\" Trader",
-    "description": "You can obtain items from a Wandering Trader by either trading or ... well ...",
+    "description": "You can obtain quite a few items from a Wandering Trader by either trading or ... well ...",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

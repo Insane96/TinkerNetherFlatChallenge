@@ -4,7 +4,7 @@
             "item": "minecraft:lava_bucket"
         },
         "title": "A cauldron will do it",
-        "description": "Obtain lava from a cauldron. You should definitely point a dripstone into a cauldron to get more lava. Where to get your first bucket? You may find a ruined portal nearby. (Increasing render distance is not cheating, it's just pro gamer move)",
+        "description": "Obtain lava from a cauldron. You should definitely point a dripstone into a cauldron to get more lava.",
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,

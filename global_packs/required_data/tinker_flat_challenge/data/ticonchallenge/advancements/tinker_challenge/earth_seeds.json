@@ -1,5 +1,5 @@
 {
-  "parent": "ticonchallenge:tinker_challenge/slimeballs",
+  "parent": "ticonchallenge:tinker_challenge/wood",
   "display": {
     "icon": {
       "item": "tconstruct:earth_slime_grass_seeds"

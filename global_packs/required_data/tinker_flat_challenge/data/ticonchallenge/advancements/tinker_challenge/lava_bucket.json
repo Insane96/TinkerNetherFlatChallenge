@@ -10,7 +10,7 @@
         "announce_to_chat": true,
         "hidden": false
     },
-    "parent": "ticonchallenge:tinker_challenge/slimeballs",
+    "parent": "ticonchallenge:tinker_challenge/root",
     "criteria": {
         "lava_bucket": {
             "trigger": "minecraft:inventory_changed",
