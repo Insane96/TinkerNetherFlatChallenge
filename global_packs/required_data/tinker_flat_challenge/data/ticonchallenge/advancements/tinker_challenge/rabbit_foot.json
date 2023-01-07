@@ -1,5 +1,5 @@
 {
-  "parent": "ticonchallenge:tinker_challenge/wood",
+  "parent": "ticonchallenge:tinker_challenge/animals",
   "display": {
     "icon": {
       "item": "minecraft:rabbit_foot"
