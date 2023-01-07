@@ -1,4 +1,4 @@
-summon lightning_bolt 0 -1 0
+summon lightning_bolt 0 1 0
 setblock 1 1 2 end_portal_frame[facing=north]
 setblock 0 1 2 end_portal_frame[facing=north]
 setblock -1 1 2 end_portal_frame[facing=north]
