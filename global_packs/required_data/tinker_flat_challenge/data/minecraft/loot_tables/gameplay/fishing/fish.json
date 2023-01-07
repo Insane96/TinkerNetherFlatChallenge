@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:fishing",
+    "pools": [
+        {
+            "rolls": 1,
+            "bonus_rolls": {
+                "min": 0,
+                "max": 0.4
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 60,
+                    "name": "minecraft:cod"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 25,
+                    "name": "minecraft:salmon"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:tropical_fish"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 13,
+                    "quality": -1,
+                    "name": "minecraft:pufferfish"
+                }
+            ]
+        }
+    ]
+}
