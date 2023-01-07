@@ -27,7 +27,7 @@ var itemsToRemoveAndHide = [
     <item:tconstruct:ichor_slime_crystal_cluster>, <item:tconstruct:ichor_slime_crystal_block>, <item:tconstruct:budding_ichor_slime_crystal>, <item:tconstruct:small_ichor_slime_crystal_bud>, <item:tconstruct:medium_ichor_slime_crystal_bud>, <item:tconstruct:large_ichor_slime_crystal_bud>, 
     <item:tconstruct:ender_slime_crystal_cluster>, <item:tconstruct:ender_slime_crystal_block>, <item:tconstruct:budding_ender_slime_crystal>, <item:tconstruct:small_ender_slime_crystal_bud>, <item:tconstruct:medium_ender_slime_crystal_bud>, <item:tconstruct:large_ender_slime_crystal_bud>] as ItemDefinition[];
 
-var itemsToRemove = [<item:minecraft:barrel>, <item:minecraft:lectern>, <item:minecraft:composter>] as ItemDefinition[];
+var itemsToRemove = [] as ItemDefinition[];
 
 /*for tag in tagsToRemoveAndHide {
     removeAndHideTag(tag);
