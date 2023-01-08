@@ -31,26 +31,6 @@
               "treasure": true
             }
           ],
-          "name": "minecraft:bow"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "type": "minecraft:uniform",
-                "min": 0.0,
-                "max": 0.25
-              },
-              "add": false
-            },
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 30.0,
-              "treasure": true
-            }
-          ],
           "name": "minecraft:fishing_rod"
         },
         {
