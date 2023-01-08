@@ -6,7 +6,7 @@
 "Enable Miscellaneous" = true
 "Enable Movement" = false
 "Enable Sleep & Respawn" = false
-"Enable Stack Size" = false
+"Enable Stack Size" = true
 
 [Combat]
 	#Various changes from weapons damage to armor reduction
@@ -23,7 +23,7 @@
 		#Set the power of the Power enchantment (vanilla is 0.5).
 		#Range: 0.0 ~ 10.0
 		"Power Power" = 0.35
-		#If true, Arrows from Bows will no longer randomly crit (basically disables the random bonus damage given when firing a fully charged arrow).
+		#If true, Arrows from Bows and Crossbows will no longer randomly crit (basically disables the random bonus damage given when firing a fully charged arrow).
 		"Disable Arrow Crits" = true
 		#If true, Arrows from Crossbows will no longer deal random damage, but a set amount of damage (about 9 at a medium distance).
 		"Adjust Crossbow Damage" = false
@@ -401,7 +401,7 @@
 	#Various changes to explosions from knockback to shielding.
 	"Enable Explosion Overhaul" = true
 	#Less durable and efficient tools
-	"Enable Tool Stats" = false
+	"Enable Tool Stats" = true
 	#Apply potion effects on certain hunger / health / experience level
 	"Enable DeBuffs" = false
 	#Spawners will no longer spawn mobs infinitely
@@ -450,7 +450,7 @@
 	[Miscellaneous."Tool Stats"]
 		#A list of items which should have their durability changed.
 		#Format is 'modid:itemid,durability'
-		"Tools Durability" = ["minecraft:wooden_sword,33", "minecraft:wooden_pickaxe,33", "minecraft:wooden_shovel,33", "minecraft:wooden_hoe,33", "minecraft:wooden_axe,33", "minecraft:stone_sword,33", "minecraft:stone_pickaxe,33", "minecraft:stone_shovel,10", "minecraft:stone_hoe,33", "minecraft:stone_axe,33", "minecraft:iron_sword,33", "minecraft:iron_pickaxe,33", "minecraft:iron_shovel,33", "minecraft:iron_hoe,33", "minecraft:iron_axe,33", "minecraft:golden_sword,33", "minecraft:golden_pickaxe,33", "minecraft:golden_shovel,33", "minecraft:golden_hoe,33", "minecraft:golden_axe,33", "minecraft:elytra,104", "minecraft:diamond_sword,33", "minecraft:diamond_pickaxe,33", "minecraft:diamond_axe,33", "minecraft:diamond_shovel,33", "minecraft:diamond_hoe,33", "minecraft:netherite_sword,33", "minecraft:shears,33", "minecraft:netherite_pickaxe,33", "minecraft:netherite_axe,33", "minecraft:netherite_shovel,33", "minecraft:netherite_hoe,33", "minecraft:flint_and_steel,10", "minecraft:leather_helmet,33", "minecraft:leather_chestplate,33", "minecraft:leather_leggings,33", "minecraft:leather_boots,33", "minecraft:chainmail_helmet,33", "minecraft:chainmail_chestplate,33", "minecraft:chainmail_leggings,33", "minecraft:chainmail_boots,33", "minecraft:golden_helmet,33", "minecraft:golden_chestplate,33", "minecraft:golden_leggings,33", "minecraft:golden_boots,33", "minecraft:iron_helmet,33", "minecraft:iron_chestplate,33", "minecraft:iron_leggings,33", "minecraft:iron_boots,33", "minecraft:diamond_helmet,33", "minecraft:diamond_chestplate,33", "minecraft:diamond_leggings,33", "minecraft:diamond_boots,33", "minecraft:netherite_helmet,33", "minecraft:netherite_chestplate,33", "minecraft:netherite_leggings,33", "minecraft:netherite_boots,33", "minecraft:bow,33", "minecraft:crossbow,33"]
+		"Tools Durability" = ["minecraft:wooden_sword,33", "minecraft:wooden_pickaxe,33", "minecraft:wooden_shovel,33", "minecraft:wooden_hoe,33", "minecraft:wooden_axe,33", "minecraft:stone_sword,33", "minecraft:stone_pickaxe,33", "minecraft:stone_shovel,10", "minecraft:stone_hoe,33", "minecraft:stone_axe,33", "minecraft:iron_sword,33", "minecraft:iron_pickaxe,33", "minecraft:iron_shovel,33", "minecraft:iron_hoe,33", "minecraft:iron_axe,33", "minecraft:golden_sword,33", "minecraft:golden_pickaxe,33", "minecraft:golden_shovel,33", "minecraft:golden_hoe,33", "minecraft:golden_axe,33", "minecraft:elytra,104", "minecraft:diamond_sword,33", "minecraft:diamond_pickaxe,33", "minecraft:diamond_axe,33", "minecraft:diamond_shovel,33", "minecraft:diamond_hoe,33", "minecraft:netherite_sword,33", "minecraft:shears,33", "minecraft:netherite_pickaxe,33", "minecraft:netherite_axe,33", "minecraft:netherite_shovel,33", "minecraft:netherite_hoe,33", "minecraft:flint_and_steel,8", "minecraft:leather_helmet,33", "minecraft:leather_chestplate,33", "minecraft:leather_leggings,33", "minecraft:leather_boots,33", "minecraft:chainmail_helmet,33", "minecraft:chainmail_chestplate,33", "minecraft:chainmail_leggings,33", "minecraft:chainmail_boots,33", "minecraft:golden_helmet,33", "minecraft:golden_chestplate,33", "minecraft:golden_leggings,33", "minecraft:golden_boots,33", "minecraft:iron_helmet,33", "minecraft:iron_chestplate,33", "minecraft:iron_leggings,33", "minecraft:iron_boots,33", "minecraft:diamond_helmet,33", "minecraft:diamond_chestplate,33", "minecraft:diamond_leggings,33", "minecraft:diamond_boots,33", "minecraft:netherite_helmet,33", "minecraft:netherite_chestplate,33", "minecraft:netherite_leggings,33", "minecraft:netherite_boots,33", "minecraft:bow,33", "minecraft:crossbow,33"]
 		#A list of items and multipliers that will apply to mining speed when breaking blocks with that item.
 		#Format is 'modid:itemid,efficiency_multiplier'
 		"Tools Efficiency" = ["minecraft:wooden_pickaxe,0", "minecraft:wooden_shovel,0", "minecraft:wooden_hoe,0", "minecraft:wooden_axe,0", "minecraft:stone_pickaxe,0", "minecraft:stone_shovel,0", "minecraft:stone_hoe,0", "minecraft:stone_axe,0", "minecraft:iron_pickaxe,0", "minecraft:iron_shovel,0", "minecraft:iron_hoe,0", "minecraft:iron_axe,0", "minecraft:diamond_pickaxe,0", "minecraft:diamond_shovel,0", "minecraft:diamond_hoe,0", "minecraft:diamond_axe,0", "minecraft:netherite_pickaxe,0", "minecraft:netherite_shovel,0", "minecraft:netherite_hoe,0", "minecraft:netherite_axe,0"]
@@ -643,7 +643,7 @@
 	["Stack Size"."General Stacking"]
 		#Food stack sizes will be reduced based off their hunger restored and saturation multiplier. The formula is '(1 - (effective_quality - 1) / Food Quality Divider) * 64' where effective_quality is hunger+saturation restored. E.g. Cooked Porkchops give 8 hunger points and have a 0.8 saturation multiplier so their stack size will be '(1 - (20.8 - 1) / 18.5) * 64' = 24 (Even foods that usually stack up to 16 or that don't stack at all will use the same formula, like Honey or Stews).
 		#This is affected by Food Module's feature 'Hunger Restore Multiplier' & 'Saturation Restore multiplier'
-		"Food Stack Reduction" = true
+		"Food Stack Reduction" = false
 		#Used in the 'Food Stack Reduction' formula. Increase this if there are foods that are better than vanilla ones, otherwise they will all stack to 1. Set this to 21.8 if you disable 'Hunger Restore Multiplier'
 		#Range: 1.0 ~ 40.0
 		"Food Quality Divider" = 18.5
@@ -662,7 +662,7 @@
 		#Range: 0.01 ~ 64.0
 		"Block Stack Multiplier" = 1.0
 		#When true, block stacks are affected by both their material type and the block stack multiplier. If false, block stacks will be affected by the multiplier only.
-		"Block Stack Affected by Material" = true
+		"Block Stack Affected by Material" = false
 
 		#Items that will ignore the stack changes. This can be inverted via 'Blacklist as Whitelist'. Each entry has an item. E.g. ["minecraft:stone"].
 		["Stack Size"."General Stacking".Blacklist]
