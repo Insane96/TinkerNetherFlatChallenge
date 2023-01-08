@@ -52,8 +52,11 @@ for item in tools {
     item.defaultInstance.anyDamage().addTooltip(useless.setStyle(Style.empty().withColor(<constant:minecraft:formatting:dark_red>)));
 }
 
-var netherPortal = "It's useless like a golden tool. But can light up a Nether portal" as TextComponent;
+var netherPortal = "It breaks easily. But can light up a Nether portal. Better upgrade to a Flint and Brick ASAP" as TextComponent;
 <item:minecraft:flint_and_steel>.anyDamage().addTooltip(netherPortal.setStyle(Style.empty().withColor(<constant:minecraft:formatting:light_purple>)));
+
+var elytraTooltip = "It breaks easily. You should upgrade it to a Slimelytra ASAP" as TextComponent;
+<item:minecraft:elytra>.anyDamage().addTooltip(elytraTooltip.setStyle(Style.empty().withColor(<constant:minecraft:formatting:light_purple>)));
 
 /*function removeAndHideTag(tag as MCTag<ItemDefinition>) as void {
     for item in tag {
