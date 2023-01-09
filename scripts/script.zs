@@ -4,6 +4,9 @@ import crafttweaker.api.item.ItemDefinition;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.text.TextComponent;
 import crafttweaker.api.text.Style;
+import crafttweaker.api.events.CTEventManager;
+import crafttweaker.api.event.block.BlockBreakEvent;
+import crafttweaker.api.block.BlockState;
 
 //var tagsToRemoveAndHide = [] as KnownTag<ItemDefinition>[];
 
@@ -68,3 +71,14 @@ function removeAndHideItem(item as ItemDefinition) as void {
     craftingTable.remove(item.defaultInstance);
     JEI.hideIngredient(item.defaultInstance);
 }
+
+var blocksNoExp = [<blockstate:minecraft:coal_ore>, <blockstate:minecraft:copper_ore>, <blockstate:minecraft:diamond_ore>, <blockstate:minecraft:emerald_ore>, <blockstate:minecraft:gold_ore>, <blockstate:minecraft:iron_ore>, <blockstate:minecraft:lapis_ore>, <blockstate:minecraft:redstone_ore>, <blockstate:minecraft:deepslate_coal_ore>, <blockstate:minecraft:deepslate_copper_ore>, <blockstate:minecraft:deepslate_diamond_ore>, <blockstate:minecraft:deepslate_emerald_ore>, <blockstate:minecraft:deepslate_gold_ore>, <blockstate:minecraft:deepslate_iron_ore>, <blockstate:minecraft:deepslate_lapis_ore>, <blockstate:minecraft:deepslate_redstone_ore>, <blockstate:minecraft:nether_quartz_ore>] as BlockState[];
+
+CTEventManager.register<BlockBreakEvent>((event) => {
+    for block in blocksNoExp {
+        if (event.getBlockState() == block) {
+            event.expToDrop = 0;
+            break;
+        }
+    }
+});

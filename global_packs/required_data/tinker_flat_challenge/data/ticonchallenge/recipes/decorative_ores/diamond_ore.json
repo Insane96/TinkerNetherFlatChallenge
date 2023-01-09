@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "decorative_ores",
+    "pattern": [
+        "SSS",
+        "SMS",
+        "SSS"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:stone"
+        },
+        "M": {
+            "item": "minecraft:diamond"
+        }
+    },
+    "result": {
+        "item": "minecraft:diamond_ore",
+        "count": 8
+    }
+}

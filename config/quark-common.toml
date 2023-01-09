@@ -262,7 +262,7 @@
 
 [tools]
 	Trowel = false
-	"Slime In A Bucket" = false
+	"Slime In A Bucket" = true
 	"Seed Pouch" = false
 	Pickarang = false
 	"Pathfinder Maps" = false
