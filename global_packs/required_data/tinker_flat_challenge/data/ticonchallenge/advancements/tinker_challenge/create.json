@@ -1,0 +1,33 @@
+{
+    "display": {
+        "icon": {
+            "item": "crate:mechanical_drill"
+        },
+        "title": "Create to rule them all",
+        "description": "You should really get into Create, with some Quartz from Bartering or Magma Cubes, Watermills and a Mechanical drill could give a neat automatic cobblestone generator. Or with a Millstone more bone meal for bones, gravel, and so on.",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "ticonchallenge:tinker_challenge/enter_nether",
+    "criteria": {
+        "water_wheel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "create:water_wheel"
+                  ]
+                }
+              ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "water_wheel"
+        ]
+    ]
+}
