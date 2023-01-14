@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "tconstruct:seared_melter"
+    },
+    "title": "Metal tools!",
+    "description": "With clay sand and gravel you can finally get a melter and then a Foundry to finally get metal tool parts. I recommend following the TiCon books for more infos on those multiblock structures.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "ticonchallenge:tinker_challenge/clay",
+  "criteria": {
+    "seared_melter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tconstruct:seared_melter"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "seared_melter"
+    ]
+  ]
+}

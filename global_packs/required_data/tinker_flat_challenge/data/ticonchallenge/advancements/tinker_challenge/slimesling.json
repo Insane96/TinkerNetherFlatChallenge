@@ -1,24 +1,24 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:pointed_dripstone"
+      "item": "tconstruct:earth_slime_sling"
     },
-    "title": "Caving Decorations",
-    "description": "You can obtain decorative ores!",
+    "title": "Fast travel",
+    "description": "Craft a slimesling to launch yourself around",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "ticonchallenge:tinker_challenge/water_bucket",
+  "parent": "ticonchallenge:tinker_challenge/slimeballs",
   "criteria": {
-    "diamond_ore": {
+    "earth_slime_sling": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:diamond_ore"
+              "tconstruct:earth_slime_sling"
             ]
           }
         ]
@@ -27,7 +27,7 @@
   },
   "requirements": [
     [
-      "diamond_ore"
+      "earth_slime_sling"
     ]
   ]
 }
