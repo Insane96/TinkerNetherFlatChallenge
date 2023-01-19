@@ -25,10 +25,10 @@ var itemsToRemoveAndHide = [
     <item:minecraft:diamond_helmet>, <item:minecraft:diamond_chestplate>, <item:minecraft:diamond_leggings>, <item:minecraft:diamond_boots>, 
     <item:minecraft:netherite_helmet>, <item:minecraft:netherite_chestplate>, <item:minecraft:netherite_leggings>, <item:minecraft:netherite_boots>, <item:minecraft:shears>, <item:minecraft:bow>, <item:minecraft:crossbow>, 
     <item:tconstruct:efln_ball>, 
-    <item:tconstruct:earth_slime_crystal>, <item:tconstruct:earth_slime_crystal_cluster>, <item:tconstruct:earth_slime_crystal_block>, <item:tconstruct:budding_earth_slime_crystal>, <item:tconstruct:small_earth_slime_crystal_bud>, <item:tconstruct:medium_earth_slime_crystal_bud>, <item:tconstruct:large_earth_slime_crystal_bud>, 
-    <item:tconstruct:sky_slime_crystal>, <item:tconstruct:sky_slime_crystal_cluster>, <item:tconstruct:sky_slime_crystal_block>, <item:tconstruct:budding_sky_slime_crystal>, <item:tconstruct:small_sky_slime_crystal_bud>, <item:tconstruct:medium_sky_slime_crystal_bud>, <item:tconstruct:large_sky_slime_crystal_bud>, 
-    <item:tconstruct:ichor_slime_crystal_cluster>, <item:tconstruct:ichor_slime_crystal_block>, <item:tconstruct:budding_ichor_slime_crystal>, <item:tconstruct:small_ichor_slime_crystal_bud>, <item:tconstruct:medium_ichor_slime_crystal_bud>, <item:tconstruct:large_ichor_slime_crystal_bud>, 
-    <item:tconstruct:ender_slime_crystal_cluster>, <item:tconstruct:ender_slime_crystal_block>, <item:tconstruct:budding_ender_slime_crystal>, <item:tconstruct:small_ender_slime_crystal_bud>, <item:tconstruct:medium_ender_slime_crystal_bud>, <item:tconstruct:large_ender_slime_crystal_bud>] as ItemDefinition[];
+    <item:tconstruct:earth_slime_crystal_cluster>, <item:tconstruct:budding_earth_slime_crystal>, <item:tconstruct:small_earth_slime_crystal_bud>, <item:tconstruct:medium_earth_slime_crystal_bud>, <item:tconstruct:large_earth_slime_crystal_bud>, 
+    <item:tconstruct:sky_slime_crystal_cluster>, <item:tconstruct:budding_sky_slime_crystal>, <item:tconstruct:small_sky_slime_crystal_bud>, <item:tconstruct:medium_sky_slime_crystal_bud>, <item:tconstruct:large_sky_slime_crystal_bud>, 
+    <item:tconstruct:ichor_slime_crystal_cluster>, <item:tconstruct:budding_ichor_slime_crystal>, <item:tconstruct:small_ichor_slime_crystal_bud>, <item:tconstruct:medium_ichor_slime_crystal_bud>, <item:tconstruct:large_ichor_slime_crystal_bud>, 
+    <item:tconstruct:ender_slime_crystal_cluster>, <item:tconstruct:budding_ender_slime_crystal>, <item:tconstruct:small_ender_slime_crystal_bud>, <item:tconstruct:medium_ender_slime_crystal_bud>, <item:tconstruct:large_ender_slime_crystal_bud>] as ItemDefinition[];
 
 var itemsToRemove = [] as ItemDefinition[];
 
