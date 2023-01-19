@@ -4,7 +4,7 @@
       "item": "minecraft:chain"
     },
     "amount_per_item": 1,
-    "needed_per_level": 36,
+    "needed_per_level": 27,
     "tools": {
       "tag": "tconstruct:modifiable/melee/sword"
     },
