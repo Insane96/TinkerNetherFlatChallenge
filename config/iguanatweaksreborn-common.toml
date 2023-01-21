@@ -24,7 +24,7 @@
 		#Range: 0.0 ~ 10.0
 		"Power Power" = 0.35
 		#If true, Arrows from Bows and Crossbows will no longer randomly crit (basically disables the random bonus damage given when firing a fully charged arrow).
-		"Disable Arrow Crits" = true
+		"Disable Arrow Crits" = false
 		#If true, Arrows from Crossbows will no longer deal random damage, but a set amount of damage (about 9 at a medium distance).
 		"Adjust Crossbow Damage" = false
 		#DISABLE: Disables protection enchantment.
