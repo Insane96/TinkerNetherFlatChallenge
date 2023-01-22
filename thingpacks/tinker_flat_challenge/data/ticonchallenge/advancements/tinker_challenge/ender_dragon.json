@@ -1,0 +1,33 @@
+{
+  "display": {
+      "icon": {
+          "item": "minecraft:enchanted_golden_apple"
+      },
+      "title": "The End?",
+      "description": "Kill the Ender Dragon ... and then kill her again. Please note that more Ender Dragons you kill = higher difficulty, but more experience. From the 2nd Ender Dragon you get an Enchanted Golden apple",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "parent": "ticonchallenge:tinker_challenge/fortress",
+  "criteria": {
+    "enchanted_golden_apple": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_golden_apple"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "enchanted_golden_apple"
+    ]
+  ]
+}

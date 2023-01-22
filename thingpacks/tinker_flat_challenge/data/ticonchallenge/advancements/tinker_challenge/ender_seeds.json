@@ -1,0 +1,33 @@
+{
+  "parent": "ticonchallenge:tinker_challenge/sky_seeds",
+  "display": {
+    "icon": {
+      "item": "tconstruct:ender_slime_grass_seeds"
+    },
+    "title": "In the right dimension",
+    "description": "Obtain Ender Slime Grass Seeds by killing a Sky Slime in the proper dimension.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ender_slime_grass_seeds": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tconstruct:ender_slime_grass_seeds"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ender_slime_grass_seeds"
+    ]
+  ]
+}

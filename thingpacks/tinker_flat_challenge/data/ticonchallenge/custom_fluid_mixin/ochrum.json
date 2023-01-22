@@ -1,0 +1,11 @@
+{
+    "type": "flowing_block",
+    "flowing": "#tconstruct:ender_slime",
+    "blocks_nearby": [
+        "#tconstruct:molten_gold"
+    ],
+    "result": {
+        "type": "block",
+        "block": "create:ochrum"
+    }
+}

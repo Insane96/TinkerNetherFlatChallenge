@@ -1,0 +1,33 @@
+{
+  "parent": "ticonchallenge:tinker_challenge/iron",
+  "display": {
+    "icon": {
+      "item": "minecraft:copper_ingot"
+    },
+    "title": "Drowned got no Iron, but Copper",
+    "description": "Obtain a Copper Ingot. Drowned have them. Baby ones have bigger pockets",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "copper_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:copper_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "copper_ingot"
+    ]
+  ]
+}

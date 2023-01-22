@@ -1,0 +1,123 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:tuff"
+        },
+        "title": "Flowing Fluids",
+        "description": "Mixin different fluids result in different outcomes. Use JEI to check all the possible combos.",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "ticonchallenge:tinker_challenge/lava",
+    "criteria": {
+        "tuff": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:tuff"
+                        ]
+                    }
+                ]
+            }
+        },
+        "calcite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:calcite"
+                        ]
+                    }
+                ]
+            }
+        },
+        "cobbled_deepslate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:cobbled_deepslate"
+                        ]
+                    }
+                ]
+            }
+        },
+        "crimsite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "create:crimsite"
+                        ]
+                    }
+                ]
+            }
+        },
+        "asurine": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "create:asurine"
+                        ]
+                    }
+                ]
+            }
+        },
+        "ochrum": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "create:ochrum"
+                        ]
+                    }
+                ]
+            }
+        },
+        "veridium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "create:veridium"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "tuff"
+        ],
+        [
+            "calcite"
+        ],
+        [
+            "cobbled_deepslate"
+        ],
+        [
+            "crimsite"
+        ],
+        [
+            "asurine"
+        ],
+        [
+            "ochrum"
+        ],
+        [
+            "veridium"
+        ]
+    ]
+}

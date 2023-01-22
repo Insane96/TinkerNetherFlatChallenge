@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:clay_ball"
+    },
+    "title": "Balanced",
+    "description": "Get clay either from milling Gravel>Sand and washing sand, or by milling dripstone blocks.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "ticonchallenge:tinker_challenge/create",
+  "criteria": {
+    "clay_ball": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:clay_ball"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "clay_ball"
+    ]
+  ]
+}

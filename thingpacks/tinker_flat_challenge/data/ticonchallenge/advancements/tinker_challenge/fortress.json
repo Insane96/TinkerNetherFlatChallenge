@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "quark:soul_bead"
+        },
+        "title": "One structure per dimension",
+        "description": "Get to a Fortress. If you can't see one, \"kindly\" ask a Wraith where you can find one (use their drop).",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "ticonchallenge:tinker_challenge/enter_nether",
+    "criteria": {
+        "fortress": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "location": {
+                    "feature": "minecraft:fortress"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "fortress"
+        ]
+    ]
+}

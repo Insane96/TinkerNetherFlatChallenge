@@ -1,0 +1,15 @@
+{
+    "type": "create:crushing",
+    "ingredients": [
+      {
+        "item": "create:asurine"
+      }
+    ],
+    "results": [
+      {
+        "item": "create:raw_zinc",
+        "chance": 0.01
+      }
+    ],
+    "processingTime": 250
+  }

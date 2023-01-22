@@ -1,0 +1,24 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "ilikewood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "tag": "ilikewood:sticks"
+          }
+        ],
+        "result": {
+          "item": "minecraft:stick"
+        }
+      }
+    }
+  ]
+}

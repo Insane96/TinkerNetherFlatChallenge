@@ -1,0 +1,20 @@
+{
+  "modifier.tinkers_things": {
+    "fortified": "#E77C56",
+    
+    "blinding": "#506B68",
+    "tracing":  "#F9FBCB",
+    "venom":    "#64A63A",
+    "weakness": "#7F0000",
+    
+    "hemodynamic": "#842F00",
+    "hemophilic":  "#842F00",
+    "hemotoxins":  "#842F00",
+    "hemophobic":  "#842F00"
+  },
+  "material.tinkers_things": {
+    "hematite": "#842F00",
+    "veinline": "#842F00"
+  },
+  "harvest_tier.tinkers_things.hematite": "#842F00"
+}

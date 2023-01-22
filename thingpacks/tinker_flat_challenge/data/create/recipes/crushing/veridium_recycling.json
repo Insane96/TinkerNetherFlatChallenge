@@ -1,0 +1,15 @@
+{
+    "type": "create:crushing",
+    "ingredients": [
+      {
+        "tag": "create:stone_types/veridium"
+      }
+    ],
+    "results": [
+      {
+        "item": "minecraft:raw_copper",
+        "chance": 0.01
+      }
+    ],
+    "processingTime": 250
+  }
